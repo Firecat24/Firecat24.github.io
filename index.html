@@ -5,42 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farhan Putra Pratama | Portfolio</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fdfdfd; }
-        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #1a1a1a; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; color: #2c3e50; }
-        .bio { font-size: 1.2rem; color: #666; margin-bottom: 30px; }
-        .project-item { margin-bottom: 20px; }
-        .project-title { font-weight: bold; color: #007bff; text-decoration: none; font-size: 1.1rem; }
-        .project-title:hover { text-decoration: underline; }
-        .tag { background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: #555; margin-right: 5px; }
-        .achievement { background: #fff4e6; border-left: 4px solid #fd7e14; padding: 15px; margin: 20px 0; }
-        footer { margin-top: 50px; font-size: 0.9rem; color: #888; text-align: center; }
-        a { color: #007bff; text-decoration: none; }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .card h3 {
-            margin-top: 0;
-            font-size: 1.1rem;
-            color: #007bff;
-        }
-        .card p {
-            font-size: 0.9rem;
-            color: #555;
+        /* Base Styling */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 40px 20px; background: #fdfdfd; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #1a1a1a; letter-spacing: -1px; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; color: #2c3e50; }
+        
+        /* Typography & Links */
+        .bio { font-size: 1.2rem; color: #666; margin-bottom: 20px; }
+        a { color: #007bff; text-decoration: none; transition: 0.2s; }
+        a:hover { color: #0056b3; text-decoration: underline; }
+        
+        /* Project Highlights */
+        .project-item { margin-bottom: 25px; padding: 10px 0; }
+        .project-title { font-weight: bold; font-size: 1.2rem; display: block; margin-bottom: 5px; }
+        .tag { background: #f0f0f0; padding: 3px 10px; border-radius: 15px; font-size: 0.75rem; color: #555; margin-right: 5px; font-weight: 500; }
+        
+        /* Achievement Banner */
+        .achievement { background: #fff4e6; border-left: 5px solid #fd7e14; padding: 20px; margin: 30px 0; border-radius: 0 8px 8px 0; }
+        
+        /* Grid Cards for Apps Script */
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; padding: 20px; transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-color: #007bff; }
+        .card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: #1a1a1a; }
+        .card p { font-size: 0.9rem; color: #555; flex-grow: 1; margin-bottom: 15px; }
+        
+        /* Footer */
+        footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.85rem; color: #888; text-align: center; }
+        
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            body { padding: 20px 15px; }
         }
     </style>
 </head>
@@ -50,20 +46,20 @@
         <h1>Muhammad Farhan Putra Pratama, S.H.</h1>
         <p class="bio">Python Developer | Web Developer | Falak Enthusiast</p>
         <p>
-            <a href="https://github.com/Firecat24">GitHub</a> • 
-            <a href="https://www.linkedin.com/in/muhammad-farhan-putra-pratama-it-25a033316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a> • 
+            <a href="https://github.com/Firecat24" target="_blank">GitHub</a> • 
+            <a href="https://www.linkedin.com/in/muhammad-farhan-putra-pratama-it-25a033316" target="_blank">LinkedIn</a> • 
             <a href="mailto:mfarhanputrap24@gmail.com">Email</a>
         </p>
     </header>
 
     <section id="about">
         <h2>Tentang Saya</h2>
-        <p>Lulusan Hukum yang beralih menjadi pengembang teknologi. Fokus pada Python, otomasi, dan instrumen astronomi (Falak). Saya membangun solusi dari perangkat lunak hingga perangkat keras.</p>
+        <p>Sarjana Hukum yang berdedikasi dalam pengembangan teknologi informasi. Memiliki keahlian khusus dalam pemrograman <strong>Python</strong>, otomasi sistem menggunakan <strong>Apps Script</strong>, serta pengembangan instrumen <strong>Astronomi (Falak)</strong>. Berpengalaman membangun solusi teknologi yang menjembatani kebutuhan administratif dengan efisiensi digital.</p>
     </section>
 
     <section id="achievements">
         <div class="achievement">
-            <strong>🏆 Juara 1 Lomba Inovasi Falak:</strong> Pencipta QHAD (Qibla Hilal Automation Direction).
+            <strong>🏆 Juara 1 Lomba Inovasi Falak:</strong> Kreator <strong>QHAD</strong> (Qibla Hilal Automation Direction), sistem otomasi robotik untuk observasi benda langit secara presisi.
         </div>
     </section>
 
@@ -71,67 +67,69 @@
         <h2>Proyek Unggulan</h2>
         
         <div class="project-item">
-            <a href="#" class="project-title">DOOKA - Kasir DMU</a>
-            <p>Sistem POS Desktop dengan Python/Kivy & Database Hybrid.</p>
-            <span class="tag">Python</span> <span class="tag">Kivy</span> <span class="tag">MySQL</span>
+            <span class="project-title">🛒 DOOKA - Kasir DMU</span>
+            <p>Sistem Point of Sale (POS) desktop yang dibangun dengan Python dan framework Kivy. Mengimplementasikan database hybrid untuk sinkronisasi data transaksi yang handal.</p>
+            <span class="tag">Python</span> <span class="tag">Kivy</span> <span class="tag">MySQL</span> <span class="tag">SQLite</span>
         </div>
 
         <div class="project-item">
-            <a href="#" class="project-title">QHAD & SiKiblat</a>
-            <p>Instrumen otomasi IoT dan penunjuk arah kiblat berbasis Arduino.</p>
-            <span class="tag">IoT</span> <span class="tag">Arduino</span> <span class="tag">C++</span>
+            <span class="project-title">🛰️ QHAD & SiKiblat</span>
+            <p>Rangkaian instrumen penentu arah kiblat dan hilal. QHAD menggunakan teknologi IoT untuk sinkronisasi data astronomis secara real-time via WiFi.</p>
+            <span class="tag">IoT</span> <span class="tag">Arduino</span> <span class="tag">C++</span> <span class="tag">Automation</span>
         </div>
 
         <div class="project-item">
-            <a href="https://panonpoe.id" class="project-title">Panonpoe Engine</a>
-            <p>Mesin perhitungan astronomis untuk data hilal dan waktu salat presisi.</p>
-            <span class="tag">Astronomy</span> <span class="tag">Algorithm</span> <span class="tag">Web</span>
+            <a href="https://panonpoe.id" target="_blank" class="project-title">🌙 Panonpoe Engine</a>
+            <p>Core engine untuk perhitungan data hisab, waktu salat, dan posisi benda langit dengan akurasi tinggi berbasis algoritma astronomi modern.</p>
+            <span class="tag">Astronomy</span> <span class="tag">Algorithm</span> <span class="tag">Web Services</span>
         </div>
     </section>
+
     <section id="automation">
         <h2>Google Workspace Automation Suite</h2>
-        <p>Kumpulan solusi otomasi untuk efisiensi operasional dan manajemen data berbasis Cloud.</p>
+        <p>Kumpulan solusi berbasis Cloud untuk mengoptimalkan efisiensi operasional dan manajemen data internal.</p>
         
         <div class="grid-container">
             <div class="card">
                 <h3>📈 Data Terlaris</h3>
-                <p>Otomasi dashboard untuk filtrasi data lintas tahun secara dinamis.</p>
-                <span class="tag">Apps Script</span>
+                <p>Dashboard dinamis untuk analisis tren penjualan dan filtrasi data lintas tahun secara otomatis.</p>
+                <div><span class="tag">Apps Script</span></div>
             </div>
     
             <div class="card">
-                <h3>🏥 Dr_hub (Pharmacy Management)</h3>
-                <p>Sistem inventaris apotek, mutasi obat, dan pengarsipan resep digital.</p>
-                <span class="tag">IoT-Cloud</span>
+                <h3>🏥 Dr_hub</h3>
+                <p>Sistem manajemen farmasi terintegrasi: pengelolaan inventaris, mutasi obat, hingga arsip resep digital.</p>
+                <div><span class="tag">Cloud-Database</span></div>
             </div>
     
             <div class="card">
                 <h3>🚫 E-Tolak</h3>
-                <p>Aplikasi pelaporan penolakan obat di apotek secara digital dan terstruktur.</p>
-                <span class="tag">Automation</span>
+                <p>Digitalisasi pelaporan penolakan obat di apotek guna mempercepat evaluasi pengadaan stok.</p>
+                <div><span class="tag">Automation</span></div>
             </div>
     
             <div class="card">
                 <h3>🎭 Decoy Program</h3>
-                <p>Sistem keamanan akses dan masking data cerdas pada ekosistem Google Sheets.</p>
-                <span class="tag">Security</span>
+                <p>Sistem keamanan akses cerdas yang mengimplementasikan teknik masking data pada Google Sheets.</p>
+                <div><span class="tag">Security</span></div>
             </div>
     
             <div class="card">
-                <h3>📦 Program_SO (Sales & Stock)</h3>
-                <p>Manajemen distribusi produk, stok promo, dan tracking kadaluarsa otomatis.</p>
-                <span class="tag">Inventory</span>
+                <h3>📦 Program_SO</h3>
+                <p>Otomasi manajemen stok promo, distribusi produk, dan sistem peringatan kadaluarsa (FEFO).</p>
+                <div><span class="tag">Inventory</span></div>
             </div>
     
             <div class="card">
                 <h3>📋 Kontroling_SOP</h3>
-                <p>Manajemen alur kerja operasional antar cabang (outlet) secara terintegrasi.</p>
-                <span class="tag">Management</span>
+                <p>Platform monitoring standar operasional antar cabang untuk memastikan konsistensi kualitas layanan.</p>
+                <div><span class="tag">Management</span></div>
             </div>
         </div>
     </section>
+
     <footer>
-        <p>&copy; 2026 Muhammad Farhan Putra Pratama. Dibuat dengan GitHub Pages.</p>
+        <p>&copy; 2026 Muhammad Farhan Putra Pratama, S.H. | Built with GitHub Pages</p>
     </footer>
 
 </body>
